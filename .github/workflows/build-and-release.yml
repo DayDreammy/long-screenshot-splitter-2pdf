@@ -35,7 +35,7 @@ jobs:
         copy dist\长截图切分工具.exe release\
     
     - name: Upload artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: screenshot-splitter-windows
         path: release/
@@ -51,7 +51,7 @@ jobs:
       uses: actions/checkout@v4
     
     - name: Download Windows artifact
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: screenshot-splitter-windows
         path: ./release
