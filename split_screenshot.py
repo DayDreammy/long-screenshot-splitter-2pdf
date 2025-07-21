@@ -157,7 +157,7 @@ def show_header():
     print(f"📦 版本: {version_info['version']}")
     print(f"👥 作者: {version_info.get('author', 'Unknown')}")
     print("📄 许可证: MIT")
-    print("🌐 GitHub: https://github.com/your-username/screenshot-splitter")
+    print("🌐 GitHub: https://github.com/DayDreammy/long-screenshot-splitter-2pdf")
     print("=" * 60)
 
 def main():

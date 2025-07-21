@@ -1,9 +1,9 @@
 # 🖼️ Screenshot Splitter | 长截图切分工具
 
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/your-username/screenshot-splitter)](https://github.com/your-username/screenshot-splitter/releases)
-[![GitHub downloads](https://img.shields.io/github/downloads/your-username/screenshot-splitter/total)](https://github.com/your-username/screenshot-splitter/releases)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/DayDreammy/long-screenshot-splitter-2pdf)](https://github.com/DayDreammy/long-screenshot-splitter-2pdf/releases)
+[![GitHub downloads](https://img.shields.io/github/downloads/DayDreammy/long-screenshot-splitter-2pdf/total)](https://github.com/DayDreammy/long-screenshot-splitter-2pdf/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://github.com/your-username/screenshot-splitter/workflows/Build%20and%20Release/badge.svg)](https://github.com/your-username/screenshot-splitter/actions)
+[![Build Status](https://github.com/DayDreammy/long-screenshot-splitter-2pdf/workflows/Build%20and%20Release/badge.svg)](https://github.com/DayDreammy/long-screenshot-splitter-2pdf/actions)
 
 一个简单易用的工具，可以将长截图切分成多个较小的图片，并自动生成PDF文件。支持拖拽操作，无需安装Python环境。
 
@@ -24,7 +24,7 @@
 
 #### 下载使用（推荐）
 
-1. 前往 [Releases页面](https://github.com/your-username/screenshot-splitter/releases) 下载最新版本的 `长截图切分工具.exe`
+1. 前往 [Releases页面](https://github.com/DayDreammy/long-screenshot-splitter-2pdf/releases) 下载最新版本的 `长截图切分工具.exe`
 2. 使用方式：
    - **双击运行**：打开程序，按提示选择图片
    - **拖拽使用**：直接将图片文件拖拽到程序图标上
@@ -34,8 +34,8 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/your-username/screenshot-splitter.git
-cd screenshot-splitter
+git clone https://github.com/DayDreammy/long-screenshot-splitter-2pdf.git
+cd long-screenshot-splitter-2pdf
 
 # 安装依赖
 pip install -r requirements.txt
@@ -96,7 +96,7 @@ python -m PyInstaller --onefile --console --name="长截图切分工具" split_s
 
 ### 🐛 问题反馈
 
-如果你遇到任何问题，请在 [Issues](https://github.com/your-username/screenshot-splitter/issues) 页面提交bug报告或功能请求。
+如果你遇到任何问题，请在 [Issues](https://github.com/DayDreammy/long-screenshot-splitter-2pdf/issues) 页面提交bug报告或功能请求。
 
 ---
 
@@ -117,7 +117,7 @@ A simple and easy-to-use tool that can split long screenshots into multiple smal
 
 #### Download and Use (Recommended)
 
-1. Go to [Releases page](https://github.com/your-username/screenshot-splitter/releases) and download the latest `长截图切分工具.exe`
+1. Go to [Releases page](https://github.com/DayDreammy/long-screenshot-splitter-2pdf/releases) and download the latest `长截图切分工具.exe`
 2. Usage:
    - **Double-click**: Open the program and follow prompts to select images
    - **Drag & Drop**: Drag image files directly onto the program icon
@@ -127,8 +127,8 @@ A simple and easy-to-use tool that can split long screenshots into multiple smal
 
 ```bash
 # Clone repository
-git clone https://github.com/your-username/screenshot-splitter.git
-cd screenshot-splitter
+git clone https://github.com/DayDreammy/long-screenshot-splitter-2pdf.git
+cd long-screenshot-splitter-2pdf
 
 # Install dependencies
 pip install -r requirements.txt

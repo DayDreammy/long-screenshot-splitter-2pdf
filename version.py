@@ -6,10 +6,10 @@
 """
 
 __version__ = "1.0.0"
-__author__ = "Screenshot Splitter Team"
+__author__ = "DayDreammy"
 __email__ = "your-email@example.com"
 __description__ = "A tool to split long screenshots into smaller images and generate PDF"
-__url__ = "https://github.com/your-username/screenshot-splitter"
+__url__ = "https://github.com/DayDreammy/long-screenshot-splitter-2pdf"
 __license__ = "MIT"
 
 # 版本历史
