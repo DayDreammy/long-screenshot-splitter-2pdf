@@ -1,0 +1,18 @@
+title: Screenshot Splitter | 长截图切分工具
+description: 智能切分长截图，优化多模态大模型处理效果
+author: DayDreammy
+url: https://daydreammy.github.io/long-screenshot-splitter-2pdf
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude files
+exclude:
+  - README.md
+  - LICENSE
+
+# Include files
+include:
+  - _config.yml 

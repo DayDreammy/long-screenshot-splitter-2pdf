@@ -49,7 +49,21 @@
 
 ### 🚀 快速开始
 
-#### 下载使用（推荐）
+#### 🌐 在线版本（推荐）
+
+🎉 **新增Web版本！无需下载，直接在浏览器中使用：**
+
+**👉 [立即使用在线版本](https://daydreammy.github.io/long-screenshot-splitter-2pdf) 👈**
+
+**在线版本特性：**
+- ✅ **免安装**：直接在浏览器中使用，支持所有操作系统
+- ✅ **拖拽上传**：支持拖拽多个图片文件批量处理
+- ✅ **实时预览**：切分后可即时预览所有图片
+- ✅ **多种下载**：支持ZIP打包下载和PDF生成
+- ✅ **隐私安全**：所有处理在本地浏览器完成，不上传服务器
+- ✅ **移动友好**：支持手机和平板设备访问
+
+#### 桌面版下载
 
 1. 前往 [Releases页面](https://github.com/DayDreammy/long-screenshot-splitter-2pdf/releases) 下载最新版本的 `长截图切分工具.exe`
 2. 使用方式：
@@ -169,7 +183,21 @@ By intelligently splitting long screenshots into multiple small images, each sma
 
 ### 🚀 Quick Start
 
-#### Download and Use (Recommended)
+#### 🌐 Online Version (Recommended)
+
+🎉 **New Web Version! Use directly in your browser without downloading:**
+
+**👉 [Try Online Version Now](https://daydreammy.github.io/long-screenshot-splitter-2pdf) 👈**
+
+**Online Version Features:**
+- ✅ **No Installation**: Use directly in browser, supports all operating systems
+- ✅ **Drag & Drop**: Support dragging multiple image files for batch processing
+- ✅ **Real-time Preview**: Preview all images immediately after splitting
+- ✅ **Multiple Downloads**: Support ZIP package download and PDF generation
+- ✅ **Privacy Secure**: All processing done locally in browser, no server upload
+- ✅ **Mobile Friendly**: Support mobile and tablet device access
+
+#### Desktop Version Download
 
 1. Go to [Releases page](https://github.com/DayDreammy/long-screenshot-splitter-2pdf/releases) and download the latest `长截图切分工具.exe`
 2. Usage:

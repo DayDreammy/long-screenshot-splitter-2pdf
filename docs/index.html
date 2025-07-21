@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🖼️ Screenshot Splitter | 长截图切分工具</title>
+    <meta name="description" content="智能切分长截图，优化多模态大模型处理效果，一键生成PDF">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>🖼️ Screenshot Splitter</h1>
+            <p class="subtitle">智能切分长截图，优化AI处理效果</p>
+            <div class="badges">
+                <a href="https://github.com/DayDreammy/long-screenshot-splitter-2pdf" target="_blank">
+                    <img src="https://img.shields.io/github/v/release/DayDreammy/long-screenshot-splitter-2pdf"
+                        alt="Version">
+                </a>
+                <a href="https://github.com/DayDreammy/long-screenshot-splitter-2pdf" target="_blank">
+                    <img src="https://img.shields.io/github/stars/DayDreammy/long-screenshot-splitter-2pdf" alt="Stars">
+                </a>
+                <a href="https://github.com/DayDreammy/long-screenshot-splitter-2pdf/blob/main/LICENSE" target="_blank">
+                    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- 工具介绍 -->
+            <section class="intro">
+                <div class="problem-statement">
+                    <h2>🚨 解决的问题</h2>
+                    <p><strong>长截图直接输入给多模态大模型效果非常差！</strong></p>
+                    <ul>
+                        <li>📏 分辨率限制：大模型对输入图片尺寸有严格限制</li>
+                        <li>🔍 细节丢失：长图压缩后文字变得模糊不清</li>
+                        <li>🧠 注意力分散：模型难以聚焦于图片中的关键信息</li>
+                        <li>⚡ 处理效率低：超大图片影响模型推理速度</li>
+                    </ul>
+                </div>
+
+                <div class="solution">
+                    <h2>✨ 解决方案</h2>
+                    <p>将长截图智能切分成多个小图片，每个小图都能被多模态大模型高质量地处理！</p>
+                </div>
+            </section>
+
+            <!-- 文件上传区域 -->
+            <section class="upload-section">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-content">
+                        <div class="upload-icon">📁</div>
+                        <h3>拖拽图片到这里 或 点击选择文件</h3>
+                        <p>支持 JPG、PNG、BMP、GIF、TIFF 格式</p>
+                        <input type="file" id="fileInput" accept="image/*" multiple>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 设置区域 -->
+            <section class="settings-section" id="settingsSection" style="display: none;">
+                <div class="settings-card">
+                    <h3>⚙️ 切分设置</h3>
+                    <div class="setting-item">
+                        <label for="maxHeight">每个切片的最大高度 (像素):</label>
+                        <input type="number" id="maxHeight" value="1500" min="500" max="3000" step="100">
+                        <span class="setting-tip">推荐1500px，最适合AI模型处理</span>
+                    </div>
+                    <button id="processBtn" class="process-btn">🔪 开始切分</button>
+                </div>
+            </section>
+
+            <!-- 进度显示 -->
+            <section class="progress-section" id="progressSection" style="display: none;">
+                <div class="progress-card">
+                    <h3>⏳ 处理进度</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <p id="progressText">准备中...</p>
+                </div>
+            </section>
+
+            <!-- 结果展示 -->
+            <section class="results-section" id="resultsSection" style="display: none;">
+                <div class="results-card">
+                    <h3>🎉 切分完成！</h3>
+                    <div class="results-summary" id="resultsSummary"></div>
+                    <div class="download-buttons">
+                        <button id="downloadZipBtn" class="download-btn primary">📦 下载所有图片 (ZIP)</button>
+                        <button id="downloadPdfBtn" class="download-btn secondary">📄 下载PDF文件</button>
+                    </div>
+                    <div class="preview-grid" id="previewGrid"></div>
+                </div>
+            </section>
+
+            <!-- 使用指南 -->
+            <section class="guide-section">
+                <h2>🎯 AI使用场景</h2>
+                <div class="use-cases">
+                    <div class="use-case">
+                        <h4>📱 AI分析长聊天记录</h4>
+                        <p>将微信/QQ长聊天截图切分后用AI总结要点</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>📄 AI解读长文档</h4>
+                        <p>将长网页/文章截图切分后让AI提取关键信息</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>📊 AI分析长报告</h4>
+                        <p>将长图表/报告切分后用AI生成分析报告</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>📚 AI处理学习资料</h4>
+                        <p>将长教程/笔记截图切分后让AI制作学习卡片</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>
+                Made with ❤️ by <a href="https://github.com/DayDreammy" target="_blank">DayDreammy</a> |
+                <a href="https://github.com/DayDreammy/long-screenshot-splitter-2pdf" target="_blank">GitHub</a> |
+                <a href="https://github.com/DayDreammy/long-screenshot-splitter-2pdf/releases" target="_blank">下载桌面版</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
