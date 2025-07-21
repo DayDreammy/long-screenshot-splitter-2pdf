@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🖼️ Screenshot Splitter | 长截图切分工具</title>
-    <meta name="description" content="智能切分长截图，优化多模态大模型处理效果，一键生成PDF">
+    <title>🖼️ Screenshot Splitter | 长截图切分工具 - 本地处理，隐私保护</title>
+    <meta name="description" content="智能切分长截图，优化多模态大模型处理效果。100%本地处理，图片永不上传，隐私安全有保障。支持拖拽上传、批量处理、PDF生成。">
+    <meta name="keywords" content="长截图切分,图片分割,AI图片处理,多模态大模型,隐私保护,本地处理,PDF生成">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
@@ -14,7 +15,7 @@
     <header class="header">
         <div class="container">
             <h1>🖼️ Screenshot Splitter</h1>
-            <p class="subtitle">智能切分长截图，优化AI处理效果</p>
+            <p class="subtitle">智能切分长截图，优化AI处理效果 | 🔒 本地处理，隐私保护</p>
             <div class="badges">
                 <a href="https://github.com/DayDreammy/long-screenshot-splitter-2pdf" target="_blank">
                     <img src="https://img.shields.io/github/v/release/DayDreammy/long-screenshot-splitter-2pdf"
@@ -26,6 +27,8 @@
                 <a href="https://github.com/DayDreammy/long-screenshot-splitter-2pdf/blob/main/LICENSE" target="_blank">
                     <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License">
                 </a>
+                <img src="https://img.shields.io/badge/Privacy-Protected-green.svg" alt="Privacy Protected">
+                <img src="https://img.shields.io/badge/Processing-Local-brightgreen.svg" alt="Local Processing">
             </div>
         </div>
     </header>
@@ -51,6 +54,67 @@
                 </div>
             </section>
 
+            <!-- 隐私保护特性 -->
+            <section class="privacy-section">
+                <div class="privacy-card">
+                    <h2>🔒 隐私保护承诺</h2>
+                    <div class="privacy-guarantee">
+                        <div class="guarantee-icon">🛡️</div>
+                        <h3>您的数据永远不离开您的设备！</h3>
+                    </div>
+                    <div class="privacy-features">
+                        <div class="privacy-feature">
+                            <span class="feature-icon">🖥️</span>
+                            <div class="feature-content">
+                                <h4>100% 本地处理</h4>
+                                <p>所有图片处理都在您的浏览器中完成，使用Canvas API进行像素级操作</p>
+                            </div>
+                        </div>
+                        <div class="privacy-feature">
+                            <span class="feature-icon">🚫</span>
+                            <div class="feature-content">
+                                <h4>零服务器交互</h4>
+                                <p>图片从不上传到任何服务器，所有处理在内存中完成</p>
+                            </div>
+                        </div>
+                        <div class="privacy-feature">
+                            <span class="feature-icon">⚡</span>
+                            <div class="feature-content">
+                                <h4>即时清理</h4>
+                                <p>关闭页面时所有临时数据自动清空，不留任何痕迹</p>
+                            </div>
+                        </div>
+                        <div class="privacy-feature">
+                            <span class="feature-icon">🌐</span>
+                            <div class="feature-content">
+                                <h4>离线可用</h4>
+                                <p>页面加载后可以断网使用，无网络依赖</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="privacy-comparison">
+                        <h4>📊 与传统在线工具对比</h4>
+                        <div class="comparison-table">
+                            <div class="comparison-row">
+                                <span class="comparison-feature">数据上传</span>
+                                <span class="our-tool">❌ 无需上传</span>
+                                <span class="other-tools">⚠️ 需要上传</span>
+                            </div>
+                            <div class="comparison-row">
+                                <span class="comparison-feature">隐私风险</span>
+                                <span class="our-tool">✅ 零风险</span>
+                                <span class="other-tools">⚠️ 存在风险</span>
+                            </div>
+                            <div class="comparison-row">
+                                <span class="comparison-feature">网络依赖</span>
+                                <span class="our-tool">✅ 最小依赖</span>
+                                <span class="other-tools">⚠️ 完全依赖</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- 文件上传区域 -->
             <section class="upload-section">
                 <div class="upload-area" id="uploadArea">
@@ -58,6 +122,7 @@
                         <div class="upload-icon">📁</div>
                         <h3>拖拽图片到这里 或 点击选择文件</h3>
                         <p>支持 JPG、PNG、BMP、GIF、TIFF 格式</p>
+                        <p class="privacy-note">🔒 所有处理在您的浏览器中完成，图片不会上传到服务器</p>
                         <input type="file" id="fileInput" accept="image/*" multiple>
                     </div>
                 </div>

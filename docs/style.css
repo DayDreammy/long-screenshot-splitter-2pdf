@@ -99,6 +99,140 @@ body {
     position: relative;
 }
 
+/* Privacy section */
+.privacy-section {
+    margin-bottom: 3rem;
+}
+
+.privacy-card {
+    background: linear-gradient(135deg, rgba(39, 174, 96, 0.1), rgba(46, 204, 113, 0.1));
+    border: 2px solid #27ae60;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(39, 174, 96, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+.privacy-card h2 {
+    text-align: center;
+    color: #27ae60;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.privacy-guarantee {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    border: 2px solid #27ae60;
+}
+
+.guarantee-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.privacy-guarantee h3 {
+    color: #27ae60;
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.privacy-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.privacy-feature {
+    display: flex;
+    align-items: flex-start;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    border-left: 4px solid #27ae60;
+    transition: all 0.3s ease;
+}
+
+.privacy-feature:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(39, 174, 96, 0.2);
+}
+
+.feature-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.feature-content h4 {
+    margin: 0 0 0.5rem 0;
+    color: #27ae60;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.feature-content p {
+    margin: 0;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.privacy-comparison {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #27ae60;
+}
+
+.privacy-comparison h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #27ae60;
+}
+
+.comparison-table {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.comparison-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0.75rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    align-items: center;
+    text-align: center;
+}
+
+.comparison-feature {
+    font-weight: 600;
+    color: #333;
+}
+
+.our-tool {
+    color: #27ae60;
+    font-weight: 600;
+    background: rgba(39, 174, 96, 0.1);
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.other-tools {
+    color: #e67e22;
+    font-weight: 600;
+    background: rgba(230, 126, 34, 0.1);
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
 /* Upload section */
 .upload-section {
     margin-bottom: 2rem;
@@ -141,6 +275,17 @@ body {
 .upload-content p {
     color: #666;
     margin-bottom: 1rem;
+}
+
+.privacy-note {
+    color: #27ae60 !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    background: rgba(39, 174, 96, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border-left: 3px solid #27ae60;
+    margin-top: 1rem !important;
 }
 
 #fileInput {

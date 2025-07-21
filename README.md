@@ -29,6 +29,39 @@
 
 通过将长截图智能切分成多个小图片，每个小图都能被多模态大模型高质量地处理，同时生成PDF方便整体查看和存档。
 
+### 🔒 隐私保护与数据安全
+
+**🛡️ 我们承诺：您的数据永远不离开您的设备！**
+
+#### 📱 **桌面版隐私保护**
+- ✅ **100%本地处理**: 所有图片处理在您的电脑上完成
+- ✅ **零网络传输**: 不需要联网，不上传任何数据
+- ✅ **即时删除**: 处理完成后临时文件自动清理
+- ✅ **开源透明**: 所有代码公开，无隐藏逻辑
+
+#### 🌐 **在线版隐私保护**
+- ✅ **浏览器端计算**: 使用Canvas API在您的浏览器中处理图片
+- ✅ **零服务器交互**: 图片从不上传到我们的服务器
+- ✅ **实时内存处理**: 图片在浏览器内存中处理，关闭页面即清空
+- ✅ **无数据收集**: 不收集任何用户数据或使用统计
+- ✅ **离线可用**: 加载后可在断网环境下使用
+
+#### 🔐 **技术实现原理**
+```
+您的图片 → 本地处理 → 切分结果 → 下载到您的设备
+    ↑                                      ↓
+永不离开您的设备                     永不经过我们的服务器
+```
+
+**与其他服务对比：**
+| 特性 | 我们的工具 | 传统在线工具 |
+|------|------------|-------------|
+| 数据上传 | ❌ 无需上传 | ⚠️ 需要上传 |
+| 服务器存储 | ❌ 不存储 | ⚠️ 可能存储 |
+| 隐私风险 | ✅ 零风险 | ⚠️ 存在风险 |
+| 网络依赖 | ✅ 最小依赖 | ⚠️ 完全依赖 |
+| 数据控制 | ✅ 完全控制 | ⚠️ 失去控制 |
+
 ### 🎯 使用场景
 
 - **📱 AI分析长聊天记录**: 将微信/QQ长聊天截图切分后用AI总结要点
@@ -36,6 +69,9 @@
 - **📊 AI分析长报告**: 将长图表/报告切分后用AI生成分析报告
 - **📚 AI处理学习资料**: 将长教程/笔记截图切分后让AI制作学习卡片
 - **💼 工作流程优化**: 结合AI助手处理各种长截图内容
+- **🏥 医疗数据处理**: 安全处理敏感的医疗图像资料
+- **💰 财务报表分析**: 保护隐私的财务数据处理
+- **📋 法律文档整理**: 安全处理机密法律文件
 
 ### ✨ 功能特性
 
@@ -46,6 +82,9 @@
 - 🎯 **格式支持**：支持 JPG、PNG、BMP、GIF、TIFF 等常见图片格式
 - 💻 **跨平台**：Windows可执行文件，无需安装Python环境
 - 🤖 **AI友好**：切分后的图片尺寸最适合多模态大模型处理
+- 🔒 **隐私优先**：本地处理，数据永不离开您的设备
+- ⚡ **高性能**：利用本地GPU/CPU加速，无网络延迟
+- 🌐 **无依赖**：核心功能基于浏览器原生API，无需安装额外软件
 
 ### 🚀 快速开始
 
@@ -62,6 +101,7 @@
 - ✅ **多种下载**：支持ZIP打包下载和PDF生成
 - ✅ **隐私安全**：所有处理在本地浏览器完成，不上传服务器
 - ✅ **移动友好**：支持手机和平板设备访问
+- ✅ **离线可用**：加载后可在无网络环境下使用
 
 #### 桌面版下载
 
@@ -163,6 +203,39 @@ At the same time, the popularity of **multimodal large models** (such as GPT-4V,
 
 By intelligently splitting long screenshots into multiple small images, each small image can be processed with high quality by multimodal large models, while generating PDFs for convenient overall viewing and archiving.
 
+### 🔒 Privacy Protection and Data Security
+
+**🛡️ We promise: Your data will never leave your device!**
+
+#### 📱 **Desktop Version Privacy Protection**
+- ✅ **100% Local Processing**: All image processing is completed on your computer
+- ✅ **Zero Network Transmission**: No need to connect to the internet, no data upload
+- ✅ **Immediate Deletion**: Temporary files are automatically cleaned up after processing
+- ✅ **Open Source Transparency**: All code is open source, no hidden logic
+
+#### 🌐 **Online Version Privacy Protection**
+- ✅ **Browser-side Calculation**: Image processing is done in your browser using the Canvas API
+- ✅ **Zero Server Interaction**: Images are never uploaded to our servers
+- ✅ **Real-time Memory Processing**: Images are processed in browser memory, cleared when the page is closed
+- ✅ **No Data Collection**: No user data or usage statistics are collected
+- ✅ **Offline Availability**: Available offline after loading
+
+#### 🔐 **Technical Implementation Principle**
+```
+Your image → Local Processing → Split Results → Download to your device
+    ↑                                      ↓
+Never leaves your device                     Never passes through our servers
+```
+
+**Comparison with Other Services:**
+| Feature | Our Tool | Traditional Online Tools |
+|---------|----------|--------------------------|
+| Data Upload | ❌ No Upload | ⚠️ Upload Required |
+| Server Storage | ❌ Not Stored | ⚠️ May Be Stored |
+| Privacy Risk | ✅ Zero Risk | ⚠️ Exists |
+| Network Dependency | ✅ Minimal Dependency | ⚠️ Full Dependency |
+| Data Control | ✅ Full Control | ⚠️ Lost Control |
+
 ### 🎯 Use Cases
 
 - **📱 AI analysis of long chat records**: Split WeChat/QQ long chat screenshots for AI to summarize key points
@@ -170,6 +243,9 @@ By intelligently splitting long screenshots into multiple small images, each sma
 - **📊 AI analysis of long reports**: Split long charts/reports for AI to generate analysis reports
 - **📚 AI processing of learning materials**: Split long tutorial/note screenshots for AI to create study cards
 - **💼 Workflow optimization**: Combine with AI assistants to process various long screenshot content
+- **🏥 Medical data processing**: Securely process sensitive medical image data
+- **💰 Financial report analysis**: Securely process private financial data
+- **📋 Legal document organization**: Securely process confidential legal documents
 
 ### ✨ Features
 
@@ -180,6 +256,9 @@ By intelligently splitting long screenshots into multiple small images, each sma
 - 🎯 **Format Support**: Support common image formats like JPG, PNG, BMP, GIF, TIFF
 - 💻 **Cross-platform**: Windows executable without Python installation required
 - 🤖 **AI-Friendly**: Split image sizes are optimally suited for multimodal large model processing
+- 🔒 **Privacy Priority**: Local processing, data never leaves your device
+- ⚡ **High Performance**: Utilize local GPU/CPU acceleration, no network latency
+- 🌐 **No Dependencies**: Core functionality based on native browser APIs, no additional software required
 
 ### 🚀 Quick Start
 
@@ -196,6 +275,7 @@ By intelligently splitting long screenshots into multiple small images, each sma
 - ✅ **Multiple Downloads**: Support ZIP package download and PDF generation
 - ✅ **Privacy Secure**: All processing done locally in browser, no server upload
 - ✅ **Mobile Friendly**: Support mobile and tablet device access
+- ✅ **Offline Availability**: Available offline after loading
 
 #### Desktop Version Download
 
