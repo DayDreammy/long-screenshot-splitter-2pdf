@@ -11,6 +11,32 @@
 
 ## 中文
 
+### 💡 项目背景
+
+在现代工作和学习中，**长截图**已经成为信息记录和分享的重要方式。无论是保存网页内容、聊天记录、还是技术文档，长截图都能完整地保留信息的上下文。
+
+同时，**多模态大模型**（如GPT-4V、Claude 3等）的普及让我们能够通过AI来分析和处理图像内容。然而，在实际使用中我们发现了一个关键问题：
+
+> 🚨 **长截图直接输入给多模态大模型效果非常差！**
+
+**主要原因包括：**
+- 📏 **分辨率限制**: 大模型对输入图片尺寸有严格限制
+- 🔍 **细节丢失**: 长图压缩后文字变得模糊不清
+- 🧠 **注意力分散**: 模型难以聚焦于图片中的关键信息
+- ⚡ **处理效率低**: 超大图片影响模型推理速度
+
+**这个工具就是为了解决这个痛点而生！**
+
+通过将长截图智能切分成多个小图片，每个小图都能被多模态大模型高质量地处理，同时生成PDF方便整体查看和存档。
+
+### 🎯 使用场景
+
+- **📱 AI分析长聊天记录**: 将微信/QQ长聊天截图切分后用AI总结要点
+- **📄 AI解读长文档**: 将长网页/文章截图切分后让AI提取关键信息  
+- **📊 AI分析长报告**: 将长图表/报告切分后用AI生成分析报告
+- **📚 AI处理学习资料**: 将长教程/笔记截图切分后让AI制作学习卡片
+- **💼 工作流程优化**: 结合AI助手处理各种长截图内容
+
 ### ✨ 功能特性
 
 - 🔪 **智能切分**：将长截图切分成多个指定高度的图片
@@ -19,6 +45,7 @@
 - 📂 **智能命名**：根据原图片名称自动生成输出文件夹和PDF文件名
 - 🎯 **格式支持**：支持 JPG、PNG、BMP、GIF、TIFF 等常见图片格式
 - 💻 **跨平台**：Windows可执行文件，无需安装Python环境
+- 🤖 **AI友好**：切分后的图片尺寸最适合多模态大模型处理
 
 ### 🚀 快速开始
 
@@ -104,6 +131,32 @@ python -m PyInstaller --onefile --console --name="长截图切分工具" split_s
 
 A simple and easy-to-use tool that can split long screenshots into multiple smaller images and automatically generate PDF files. Supports drag-and-drop operations without requiring Python installation.
 
+### 💡 Project Background
+
+In modern work and study, **long screenshots** have become an essential way to record and share information. Whether it's saving web content, chat records, or technical documentation, long screenshots can completely preserve the context of information.
+
+At the same time, the popularity of **multimodal large models** (such as GPT-4V, Claude 3, etc.) allows us to analyze and process image content through AI. However, in actual use, we discovered a critical problem:
+
+> 🚨 **Long screenshots directly input to multimodal large models perform very poorly!**
+
+**Main reasons include:**
+- 📏 **Resolution limitations**: Large models have strict limits on input image dimensions
+- 🔍 **Detail loss**: Text becomes blurry after long image compression
+- 🧠 **Attention dispersion**: Models struggle to focus on key information in images
+- ⚡ **Low processing efficiency**: Oversized images affect model inference speed
+
+**This tool was created to solve this pain point!**
+
+By intelligently splitting long screenshots into multiple small images, each small image can be processed with high quality by multimodal large models, while generating PDFs for convenient overall viewing and archiving.
+
+### 🎯 Use Cases
+
+- **📱 AI analysis of long chat records**: Split WeChat/QQ long chat screenshots for AI to summarize key points
+- **📄 AI interpretation of long documents**: Split long webpage/article screenshots for AI to extract key information
+- **📊 AI analysis of long reports**: Split long charts/reports for AI to generate analysis reports
+- **📚 AI processing of learning materials**: Split long tutorial/note screenshots for AI to create study cards
+- **💼 Workflow optimization**: Combine with AI assistants to process various long screenshot content
+
 ### ✨ Features
 
 - 🔪 **Smart Splitting**: Split long screenshots into multiple images with specified height
@@ -112,6 +165,7 @@ A simple and easy-to-use tool that can split long screenshots into multiple smal
 - 📂 **Smart Naming**: Automatically generate output folders and PDF file names based on original image names
 - 🎯 **Format Support**: Support common image formats like JPG, PNG, BMP, GIF, TIFF
 - 💻 **Cross-platform**: Windows executable without Python installation required
+- 🤖 **AI-Friendly**: Split image sizes are optimally suited for multimodal large model processing
 
 ### 🚀 Quick Start
 
